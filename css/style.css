@@ -18,6 +18,7 @@
   --active-icon: #afb1b8;
   --footer-background-icon: rgba(255, 255, 255, 0.1);
   --profession-name-background: rgba(47, 48, 58, 0.8);
+  --footer-form-border: rgba(255, 255, 255, 0.3);
 }
 * {
   margin: 0;
@@ -524,7 +525,7 @@ body {
   margin-left: 70px;
   padding-top: 12px;
 }
-.footer-icons-title {
+.footer-section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -559,6 +560,44 @@ body {
   align-items: center;
   border-radius: 50%;
   background-color: var(--footer-background-icon);
+}
+.footer-form {
+  margin-left: 78px;
+  padding-top: 12px;
+}
+.footer-input {
+  background-color: var(--footer-background-color);
+  box-sizing: border-box;
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--footer-form-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  letter-spacing: 0.03em;
+}
+.footer-btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  margin-left: 370px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-form {
+  text-align: center;
+  fill: var(--active-icon);
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
 }
 .backdrop-modal {
   position: fixed;
