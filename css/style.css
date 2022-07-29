@@ -651,7 +651,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.modal-form label {
+.modal-form-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -664,14 +665,14 @@ body {
   color: var(--mail-phone-color);
   padding-bottom: 10px;
 }
-.modal-form label:nth-child(5) {
+.modal-form-block:nth-child(5) {
   display: flex;
   flex-direction: row;
   margin-left: 54px;
   padding-bottom: 30px;
   padding-top: 20px;
 }
-.modal-form label:nth-child(4) {
+.modal-form-block:nth-child(4) {
   padding-bottom: 0;
 }
 .modal-input-description {
@@ -695,6 +696,12 @@ body {
 }
 .modal-input-feedback::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+.icon-input {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: inline-block;
 }
 .accept {
   font-size: 14px;
