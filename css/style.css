@@ -164,7 +164,7 @@ body {
   border: none;
 }
 .front-service:hover {
-  color: var(--black-color);
+  color: var(--blue-color);
   background-color: var(--white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -586,6 +586,7 @@ body {
   background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
@@ -595,7 +596,7 @@ body {
 }
 .icon-form {
   text-align: center;
-  fill: red;
+  fill: var(--white-color);
   width: 24px;
   height: 24px;
   margin-left: 24px;
@@ -677,6 +678,16 @@ body {
   border: 1px solid var(--modal-input-color);
   border-radius: 4px;
   box-sizing: border-box;
+  padding-left: 42px;
+}
+.modal-input:focus,
+.modal-input:hover {
+  outline: none;
+  border-color: var(--blue-color);
+}
+.modal-input:focus ~ .icon-input,
+.modal-input:hover ~ .icon-input {
+  fill: var(--blue-color);
 }
 .modal-input-feedback {
   width: 448px;
@@ -689,6 +700,11 @@ body {
 }
 .modal-input-feedback::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+.modal-input-feedback:focus,
+.modal-input-feedback:hover {
+  outline: none;
+  border-color: var(--blue-color);
 }
 .icon-input {
   position: absolute;
@@ -742,5 +758,5 @@ body {
   background-color: var(--blue-color);
   color: var(--white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 1550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
