@@ -595,7 +595,7 @@ body {
 }
 .icon-form {
   text-align: center;
-  fill: var(--active-icon);
+  fill: red;
   width: 24px;
   height: 24px;
   margin-left: 24px;
@@ -702,6 +702,7 @@ body {
   top: 50%;
   left: 15px;
   display: inline-block;
+  fill: var(--strong-text-color);
 }
 .accept {
   font-size: 14px;
