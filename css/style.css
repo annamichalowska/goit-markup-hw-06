@@ -717,11 +717,19 @@ body {
   fill: var(--strong-text-color);
 }
 .checkbox {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-left: 54px;
   padding-bottom: 30px;
   padding-top: 20px;
+  appearance: none;
+}
+.icon-check:focus,
+.icon-check:hover {
+  position: absolute;
+  background-color: var(--blue-color);
+  border-radius: 2px;
 }
 .accept {
   font-size: 14px;
