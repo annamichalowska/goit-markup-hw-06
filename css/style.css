@@ -720,16 +720,32 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: 54px;
   padding-bottom: 30px;
   padding-top: 20px;
   appearance: none;
+}
+.square {
+  width: 15px;
+  height: 16px;
+  border: 2px solid var(--strong-text-color);
+}
+.checkbox-input {
+  appearance: none;
+}
+.icon-check {
+  position: absolute;
 }
 .icon-check:focus,
 .icon-check:hover {
   position: absolute;
   background-color: var(--blue-color);
   border-radius: 2px;
+  border: 2px solid var(--blue-color);
+}
+.checkbox-input:checked + .icon-check {
+  background-image: url();
 }
 .accept {
   font-size: 14px;
@@ -752,6 +768,10 @@ body {
   color: var(--white-color);
   margin-left: 164px;
   cursor: pointer;
+}
+.modal-form button:focus,
+.modal-form button:hover {
+  background: #0769b9e5;
 }
 .close-btn {
   position: absolute;
