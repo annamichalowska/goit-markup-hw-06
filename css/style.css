@@ -736,16 +736,14 @@ body {
 }
 .icon-check {
   position: absolute;
+  z-index: 102;
 }
-.icon-check:focus,
-.icon-check:hover {
+.checkbox-input:checked + .icon-check {
   position: absolute;
+  background-image: url(./images/-icon-checbox.svg);
   background-color: var(--blue-color);
   border-radius: 2px;
   border: 2px solid var(--blue-color);
-}
-.checkbox-input:checked + .icon-check {
-  background-image: url();
 }
 .accept {
   font-size: 14px;
