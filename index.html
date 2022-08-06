@@ -424,7 +424,9 @@
     <div class="backdrop-modal is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
-          <b>x</b>
+          <svg class="icon-close" width="15" height="16">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
         </button>
         <p class="modal-description">Zostaw swoje dane w formularzu poniżej</p>
         <form class="modal-form">
@@ -452,7 +454,6 @@
               <input type="email" name="email" class="modal-input" />
               <svg class="icon-input" width="15" height="12">
                 <use href="images/icons.svg#icon-envelope-form"></use>
-                <!-- <use href="images/icons.svg#icon-check"></use> -->
               </svg>
             </label>
           </div>
@@ -469,10 +470,10 @@
           <div class="checkbox">
             <div class="square">
               <input type="checkbox" class="checkbox-input" name="agreement" />
+              <svg class="icon-check" width="15" height="16">
+                <use href="images/icons.svg#icon-checkbox"></use>
+              </svg>
             </div>
-            <svg class="icon-check" width="15" height="16">
-              <use href="images/icons.svg#icon-checkbox"></use>
-            </svg>
             <p class="accept">
               Oświadczam iż akceptuję
               <a href="#">Regulamin</a> i
