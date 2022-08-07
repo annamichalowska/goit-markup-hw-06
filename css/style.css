@@ -632,6 +632,7 @@ body {
   left: 50%;
   width: 528px;
   height: 581px;
+  padding-right: 40px;
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
   border-radius: 4px;
@@ -669,8 +670,9 @@ body {
   padding-bottom: 4px;
 }
 .modal-input {
-  width: 448px;
-  height: 40px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid var(--modal-input-color);
   border-radius: 4px;
   box-sizing: border-box;
@@ -688,13 +690,14 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-feedback {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid var(--modal-input-color);
   border-radius: 4px;
   box-sizing: border-box;
   padding-top: 12px;
   padding-left: 16px;
+  padding-right: 16px;
 }
 .modal-input-feedback::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -769,14 +772,18 @@ body {
   margin-left: 0;
 }
 .modal-form button {
-  width: 200px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 76px;
   background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   color: var(--white-color);
-  margin-left: 164px;
   cursor: pointer;
 }
 .modal-form button:focus,
