@@ -631,8 +631,8 @@ body {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
-  padding-right: 40px;
+  /* height: 581px; */
+  padding: 40px;
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
   border-radius: 4px;
@@ -645,7 +645,6 @@ body {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--strong-text-color);
-  padding-top: 40px;
   padding-bottom: 12px;
 }
 .modal-form {
@@ -656,7 +655,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
   font-size: 12px;
   line-height: 1.17167;
   letter-spacing: 0.01em;
@@ -718,7 +716,7 @@ body {
 .checkbox {
   display: flex;
   align-items: center;
-  margin-left: 54px;
+  margin-left: 14px;
   padding-bottom: 30px;
   padding-top: 20px;
 }
